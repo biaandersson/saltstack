@@ -19,6 +19,8 @@ jobs:
         uses: appleboy/ssh-action@master
         with:
           host: 34.88.12.192
+          port: 22
+          username: root
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd /srv/saltstack && git pull && salt '*' state.apply state_output=minimal state_verbose=False && salt '*' saltutil.refresh_pillar && salt '*' saltutil.sync_modules && salt '*' saltutil.sync_grains
