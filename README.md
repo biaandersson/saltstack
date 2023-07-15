@@ -115,4 +115,4 @@ This repository is configured to use GitHub Actions to deploy the Salt Master. Y
 
 This repository is a template for creating your own states and pillars. It is a good starting point for creating your own configuration management repository. I might add some `Formulas` and other states and pillars in the future.
 
-Formulas are a collection of Salt states that are designed to be reusable. They are a great way to organize your Salt states and make them more portable and shareable. Formulas are a great way to organize your Salt states and make them more portable and shareable. You can think of them as a way to package up your Salt states into a single unit that can be easily shared and reused. In simple terms, think of them as `React components` for Salt states.
+Formulas are a collection of Salt states that are designed to be reusable. They are a great way to organize your Salt states and make them more portable and shareable. You can think of them as a way to package up your Salt states into a single unit that can be easily shared and reused. In simple terms, think of them as `React components` for Salt states.
