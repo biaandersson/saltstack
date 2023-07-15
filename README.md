@@ -5,6 +5,7 @@
 - [About](#about)
 - [Getting Started](#getting_started)
 - [Usage](#usage)
+- [Deploy](#deploy)
 
 ## About <a name = "about"></a>
 
@@ -13,6 +14,8 @@ SaltStack is a Python-based open-source configuration management software and re
 ## Getting Started <a name = "getting_started"></a>
 
 You simply have to clone this repository to start to use it. It comes with a set of pre-configured states and pillars that you can use to configure your infrastructure. Salt can be used to configure a single machine or thousands of machines. It can be used to manage your infrastructure, deploy applications, and automate your daily tasks. Salt is a powerful and flexible tool, but it can be difficult to learn.
+
+This project is part of the [Terraform](https://github.com/biaandersson/gloud-tf-automation) automation project. The Terraform project is used to deploy the infrastructure, setup the Salt Master, and install the Salt Minions. It uses the states, formulas and pillars in this repository to configure the infrastructure. So it's a part of a bigger project, but it can be used as a standalone project as well.
 
 ### Prerequisites
 
@@ -103,6 +106,10 @@ salt '*' grains.get namespace
 test-web02:
     testservice
 ```
+
+## Deploy <a name = "deploy"></a>
+
+This repository is configured to use GitHub Actions to deploy the Salt Master. You can use the following workflow to deploy the Salt Master. You can also use the `salt.yml` file as a template to create your own workflow. Once you commit and push your changes to the `main` branch, GitHub Actions will deploy the Salt Master, and update the minions.
 
 ## Summary
 
