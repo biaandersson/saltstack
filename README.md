@@ -9,9 +9,9 @@
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
 
-## Table of Contents
-
 <div align="left">
+
+## Table of Contents
 
 - [About](#about)
 - [Getting Started](#getting_started)
