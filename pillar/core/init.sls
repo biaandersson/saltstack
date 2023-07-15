@@ -1,3 +1,1 @@
-apps:
-  service:
-    namespace: testservice
+env: "test"
