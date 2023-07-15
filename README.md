@@ -1,6 +1,17 @@
-# SaltStack Configuration Management
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=400px height=200px src="https://camo.githubusercontent.com/37e7c20ae129b396a6985785199d24659eab4d758b7d639d83f9706b32992982/68747470733a2f2f6769746c61622e636f6d2f73616c74737461636b2f6f70656e2f73616c742d6272616e64696e672d67756964652f2d2f7261772f6d61737465722f6c6f676f732f53616c7450726f6a6563745f616c746c6f676f5f7465616c2e706e673f696e6c696e653d74727565" alt="Project Logo"></a>
+</p>
+
+<h3 align="center">SaltStack Project</h3>
+
+<div align="center">
+
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
 
 ## Table of Contents
+
+<div align="left">
 
 - [About](#about)
 - [Getting Started](#getting_started)
