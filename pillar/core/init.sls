@@ -1,0 +1,3 @@
+apps:
+  service:
+    namespace: testservice

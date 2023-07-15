@@ -1,0 +1,23 @@
+name: Deploy Salt Master
+
+on:
+  push:
+    branches:
+      - staging
+  pull_request:
+    branches:
+      - staging
+
+jobs:
+  salt-master:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      
+      - name: SSH Salt Master
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ vars.SALT_MASTER_HOST }}
+          script: |
+            cd /srv/saltstack && git pull && salt '*' state.apply state_output=minimal state_verbose=False && salt '*' saltutil.refresh_pillar && salt '*' saltutil.sync_modules && salt '*' saltutil.sync_grains
